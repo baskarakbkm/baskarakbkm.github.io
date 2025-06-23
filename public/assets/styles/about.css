@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.sampul {
+    height: 250px;
+    background-image: url(images/sampul.jpg);
+}

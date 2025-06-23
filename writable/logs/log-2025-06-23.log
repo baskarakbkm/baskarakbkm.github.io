@@ -1,0 +1,692 @@
+CRITICAL - 2025-06-23 09:05:19 --> TypeError: App\Controllers\Home::index(): Return value must be of type string, none returned
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 09:47:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 09:47:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 09:47:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(145): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->artikeldaftar()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(145): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->artikeldaftar()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 09:47:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: pages/artikeldaftar]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `tanggal` DESC, `idartikel` DESC', [], false)
+ 3 APPPATH\Controllers\Pages.php(145): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->artikeldaftar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 10:05:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 10:05:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 10:20:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_s...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('dsdsfsd')
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->translate()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_s...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('dsdsfsd')
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->translate()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 10:20:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: pages/translator]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'dsdsfsd\' LIMIT 1')
+ 3 APPPATH\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('dsdsfsd')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->translate()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 10:31:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Database_Baskar...', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 10:31:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 10:36:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u422031368_kbkm'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('127.0.0.1:3306', 'u422031368_kbkm', Object(SensitiveParameterValue), 'u422031368_Bask...', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 10:36:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 10:36:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u422031368_kbkm'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('127.0.0.1:3306', 'u422031368_kbkm', Object(SensitiveParameterValue), 'u422031368_Bask...', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 10:36:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 10:36:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u422031368_kbkm'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('127.0.0.1:3306', 'u422031368_kbkm', Object(SensitiveParameterValue), 'u422031368_Bask...', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 10:36:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 11:06:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_baskara', 3306, '', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#4 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#11 {main}
+CRITICAL - 2025-06-23 11:06:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 3 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 11:09:35 --> mysqli_sql_exception: Table 'db_baskara.kamus' doesn't exist in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM ...', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM ...')
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+CRITICAL - 2025-06-23 11:09:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.kamus' doesn't exist
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 2 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 11:09:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.kamus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM kamus')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM kamus')
+ 3 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 4 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 11:09:35 --> [Caused by] mysqli_sql_exception: Table 'db_baskara.kamus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM kamus', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM kamus')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM kamus')
+ 4 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 5 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 11:16:40 --> Error: Call to undefined function potong()
+[Method: GET, Route: pages/artikeldaftar]
+in APPPATH\Views\pages\artikeldaftar.php on line 14.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/artikeldaftar', [], true)
+ 4 APPPATH\Controllers\Pages.php(147): view('pages/artikeldaftar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->artikeldaftar()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 12:12:25 --> mysqli_sql_exception: Table 'db_baskara.kamus' doesn't exist in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM ...', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM ...')
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+CRITICAL - 2025-06-23 12:12:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.kamus' doesn't exist
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 2 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:12:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.kamus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM kamus')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM kamus')
+ 3 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 4 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:12:25 --> [Caused by] mysqli_sql_exception: Table 'db_baskara.kamus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM kamus', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM kamus')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM kamus')
+ 4 APPPATH\Models\BaskaraModel.php(27): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM kamus')
+ 5 APPPATH\Controllers\Pages.php(109): App\Models\BaskaraModel->kamus()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 12:12:39 --> mysqli_sql_exception: Table 'db_baskara.kamus' doesn't exist in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT bahasa_s...', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT bahasa_s...')
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT bahasa_s...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_s...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('apa')
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->translate()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+CRITICAL - 2025-06-23 12:12:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.kamus' doesn't exist
+[Method: POST, Route: pages/translator]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 2 APPPATH\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('apa')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->translate()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:12:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.kamus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 3 APPPATH\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 4 APPPATH\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('apa')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->translate()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:12:39 --> [Caused by] mysqli_sql_exception: Table 'db_baskara.kamus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 4 APPPATH\Models\BaskaraModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT bahasa_sawang FROM kamus WHERE bahasa_indo = \'apa\' LIMIT 1')
+ 5 APPPATH\Controllers\Pages.php(79): App\Models\BaskaraModel->translate_to_sawang('apa')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->translate()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 12:16:33 --> mysqli_sql_exception: Table 'db_baskara.huruf_c' doesn't exist in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM ...', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM ...')
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+CRITICAL - 2025-06-23 12:16:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.huruf_c' doesn't exist
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM huruf_c')
+ 2 APPPATH\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:16:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.huruf_c' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM huruf_c')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM huruf_c')
+ 3 APPPATH\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM huruf_c')
+ 4 APPPATH\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:16:33 --> [Caused by] mysqli_sql_exception: Table 'db_baskara.huruf_c' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM huruf_c', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM huruf_c')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM huruf_c')
+ 4 APPPATH\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM huruf_c')
+ 5 APPPATH\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+ERROR - 2025-06-23 12:16:35 --> mysqli_sql_exception: Table 'db_baskara.huruf_c' doesn't exist in C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\USER\Desktop\Project\baskara\system\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM ...', 0)
+#1 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM ...')
+#2 C:\Users\USER\Desktop\Project\baskara\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM ...')
+#3 C:\Users\USER\Desktop\Project\baskara\app\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM ...')
+#4 C:\Users\USER\Desktop\Project\baskara\app\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+#5 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+#6 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#7 C:\Users\USER\Desktop\Project\baskara\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\USER\Desktop\Project\baskara\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\USER\Desktop\Project\baskara\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\USER\Desktop\Project\baskara\system\rewrite.php(44): require_once('C:\\Users\\USER\\D...')
+#12 {main}
+CRITICAL - 2025-06-23 12:16:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.huruf_c' doesn't exist
+[Method: GET, Route: pages/kamus]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM huruf_c')
+ 2 APPPATH\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:16:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_baskara.huruf_c' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM huruf_c')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM huruf_c')
+ 3 APPPATH\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM huruf_c')
+ 4 APPPATH\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')
+CRITICAL - 2025-06-23 12:16:35 --> [Caused by] mysqli_sql_exception: Table 'db_baskara.huruf_c' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query(' SELECT * FROM huruf_c', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute(' SELECT * FROM huruf_c')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery(' SELECT * FROM huruf_c')
+ 4 APPPATH\Models\BaskaraModel.php(120): CodeIgniter\Database\BaseConnection->query(' SELECT * FROM huruf_c')
+ 5 APPPATH\Controllers\Pages.php(112): App\Models\BaskaraModel->huruf_c()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->kamus()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\USER\\Desktop\\Project\\baskara\\public\\index.php')

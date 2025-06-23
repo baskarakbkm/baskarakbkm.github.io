@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.fototim {
+  height: 380px;
+  background-image: url(../images/fototim.jpg);
+  background-size: 100%;
+  background-position: 0px -400px;
+  border-bottom: 5px solid #acacac;
+}
+
+
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@1,500&display=swap");
+
+:root {
+  --main_default_200: #eec8a9;
+  --main_hover_400: #dd8a5a;
+  --main_active-500: #c7562f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+}
+
+/* Header Style */
+/*.header {
+  background: var(--main_default_200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+.header > section {
+  display: flex;
+  gap: 1rem;
+}
+.header > nav > ul {
+  display: flex;
+  gap: 1rem;
+}
+.header > nav > ul > li:hover {
+  color: var(--main_hover_400);
+}
+.header > nav > ul > li:hover {
+  color: var(--main_active-500);
+}
+
+/* Slideshow gambar awal */
+/* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+
+}
+
+
+
+.container {
+
+    padding: 100px 0 0 0;
+}
+
+/* Slideshow container */
+/*.content-slide {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: auto;
+}
+
+.imgslide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width:100%;height: 300px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: #fafafa;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-slide .numberslide {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* resposive */
+
+/*@media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+    
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+
+.container .page {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+    background-color: #ce0000;
+}
+
+/* our team */
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Footer Style */
+/*.footer {
+  background: var(--main_default_200);
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  padding: 1rem;
+  position: sticky;
+  bottom: unset;
+}
+.footer > section {
+  align-self: center;
+  height: 100%;
+  flex-direction: column;
+} 
+.footer > section:nth-child(3) {
+  text-align: center;
+}
+.footer h4 {
+  text-decoration: underline;
+  text-align: left;
+}
+.footer > section > img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Hero Section */
+/*.hero-section {
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.sportsbettingdime.com%2Fapp%2Fuploads%2Fhorrorpic.jpg&f=1&nofb=1&ipt=7ae20065ee52ac69a4fa6ef79ca5c03fef0bb8d077beafef7d03700d6ab3355c&ipo=images");
+  min-height: 370px;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Information Section */
+/* .information-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.information-section > div {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.information-section  img {
+  height: 280px;
+  width: auto;
+}
+.information-section > div:nth-child(4) {
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
+/* Documentation Section */
+/*.documentation-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+.documentation-section > div {
+  display: grid;
+  margin: auto;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.documentation-section > div > img {
+  width: 300px;
+}
+
+.bahasawrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.center {
+  text-align: center;
+} 
+
+
