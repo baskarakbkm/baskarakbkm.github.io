@@ -106,35 +106,14 @@ class Pages extends BaseController
 
     public function kamus()
     {
-        $data['kms'] = $this->BaskaraModel->kamus();
-        $data['huruf_a'] = $this->BaskaraModel->huruf_a();
-        $data['huruf_b'] = $this->BaskaraModel->huruf_b();
-        $data['huruf_c'] = $this->BaskaraModel->huruf_c();
-        $data['huruf_d'] = $this->BaskaraModel->huruf_d();
-        $data['huruf_e'] = $this->BaskaraModel->huruf_e();
-        $data['huruf_f'] = $this->BaskaraModel->huruf_f();
-        $data['huruf_g'] = $this->BaskaraModel->huruf_g();
-        $data['huruf_h'] = $this->BaskaraModel->huruf_h();
-        $data['huruf_i'] = $this->BaskaraModel->huruf_i();
-        $data['huruf_j'] = $this->BaskaraModel->huruf_j();
-        $data['huruf_k'] = $this->BaskaraModel->huruf_k();
-        $data['huruf_l'] = $this->BaskaraModel->huruf_l();
-        $data['huruf_m'] = $this->BaskaraModel->huruf_m();
-        $data['huruf_n'] = $this->BaskaraModel->huruf_n();
-        $data['huruf_o'] = $this->BaskaraModel->huruf_o();
-        $data['huruf_p'] = $this->BaskaraModel->huruf_p();
-        $data['huruf_q'] = $this->BaskaraModel->huruf_q();
-        $data['huruf_r'] = $this->BaskaraModel->huruf_r();
-        $data['huruf_s'] = $this->BaskaraModel->huruf_s();
-        $data['huruf_t'] = $this->BaskaraModel->huruf_t();
-        $data['huruf_u'] = $this->BaskaraModel->huruf_u();
-        $data['huruf_v'] = $this->BaskaraModel->huruf_v();
-        $data['huruf_w'] = $this->BaskaraModel->huruf_w();
-        $data['huruf_x'] = $this->BaskaraModel->huruf_x();
-        $data['huruf_y'] = $this->BaskaraModel->huruf_y();
-        $data['huruf_z'] = $this->BaskaraModel->huruf_z();
-        $data['title'] = 'Kamus | Baskara';
+        $data = [];
+        $abjad = range('A', 'Z');
 
+        foreach ($abjad as $huruf) {
+        $data['huruf_' . strtolower($huruf)] = $this->BaskaraModel->getByHuruf($huruf);
+        }
+
+        $data['title'] = 'Kamus | Baskara';
         return view('pages/kamus', $data);
     }
     
